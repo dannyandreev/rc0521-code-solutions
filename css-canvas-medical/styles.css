@@ -1,21 +1,7 @@
-header {
-  border-bottom: solid;
-  border-color: rgb(236, 236, 236);
-  border-width: 1px;
-  display: flex;
-  justify-content: center;
-}
+/* ----------------------------- CONTENT ----------------------------- */
 
-.wrap {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.alignItemsCenter {
-  display: flex;
-  align-items: center;
-}
-
+/* ----------------------------- GENERAL CONTENT ----------------------------- */
 .content {
   width: 100%;
   padding-left: 67px;
@@ -27,19 +13,42 @@ header {
   margin-top: 15px;
   margin-bottom: 15px;
   display: flex;
-
-  /* flex-wrap: wrap; */
   justify-content: space-between;
   align-items: center;
 }
 
-/* .navLinks {
+.greyedBackground {
+  background-color: rgba(127, 127, 127, 0.4);
+  height: 100%;
+  width: 100%;
+}
+
+.buttonMedium {
+  border-radius: 4px;
+  background-color: rgb(40, 68, 100);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 140px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+p {
+  line-height: 24px;
+}
+
+/* ----------------------------- HEADER ----------------------------- */
+header {
+  border-bottom: solid;
+  border-color: rgb(236, 236, 236);
+  border-width: 1px;
   display: flex;
-  align-items: center;
-} */
+  justify-content: center;
+}
 
 .navLink {
-  padding-left: 50px;
   white-space: nowrap;
 }
 
@@ -52,14 +61,7 @@ header {
   padding-bottom: 10px;
 }
 
-.column-half {
-  width: 50%;
-}
-
-.column-quarter {
-  width: 25%;
-}
-
+/* ----------------------------- FOOTER ----------------------------- */
 .footerTop {
   background-color: rgb(82, 83, 81);
 }
@@ -74,16 +76,63 @@ header {
   margin-bottom: 40px;
 }
 
-/* .footLinks {
-  display: flex;
-  align-items: center;
-} */
-
 .footLink {
   padding-right: 50px;
   white-space: nowrap;
 }
 
+/* ----------------------------- ALIGNMENT ----------------------------- */
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column-55 {
+  width: 55%;
+}
+
+.column-half {
+  width: 50%;
+}
+
+.column-quarter {
+  width: 25%;
+}
+
+.centerVertical {
+  display: flex;
+  align-items: center;
+}
+
+.centerHorizontal {
+  /* display: flex;
+  justify-content: space-between; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.marginVerticalLarge {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.marginVerticalMedium {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.marginHorizonalLarge {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.marginHorizonalMedium {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* ----------------------------- TEXT ----------------------------- */
 .greyText {
   color: rgb(82, 83, 81);
 }
@@ -117,6 +166,11 @@ header {
 .heavyWeight {
   font-size: medium;
   font-weight: 800;
+}
+
+.superHeavyWeight {
+  font-size: 36px;
+  font-weight: 500;
 }
 
 .mediumSpace {
