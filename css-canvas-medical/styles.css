@@ -1,10 +1,19 @@
 header {
-  display: flex;
-  flex-wrap: wrap;
   border-bottom: solid;
   border-color: rgb(236, 236, 236);
   border-width: 1px;
+  display: flex;
   justify-content: center;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.alignItemsCenter {
+  display: flex;
+  align-items: center;
 }
 
 .content {
@@ -24,10 +33,10 @@ header {
   align-items: center;
 }
 
-.navLinks {
+/* .navLinks {
   display: flex;
   align-items: center;
-}
+} */
 
 .navLink {
   padding-left: 50px;
@@ -43,8 +52,21 @@ header {
   padding-bottom: 10px;
 }
 
-.footerContent {
-  color: white;
+.column-half {
+  width: 50%;
+}
+
+.column-quarter {
+  width: 25%;
+}
+
+.footerTop {
+  background-color: rgb(82, 83, 81);
+}
+
+.topFooterContents {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .footerBottom {
@@ -52,10 +74,10 @@ header {
   margin-bottom: 40px;
 }
 
-.footLinks {
+/* .footLinks {
   display: flex;
   align-items: center;
-}
+} */
 
 .footLink {
   padding-right: 50px;
@@ -82,6 +104,11 @@ header {
   font-family: 'Tiempos Headline', sans-serif;
 }
 
+.smallWeight {
+  font-size: small;
+  font-weight: 500;
+}
+
 .mediumWeight {
   font-size: medium;
   font-weight: 500;
@@ -90,4 +117,14 @@ header {
 .heavyWeight {
   font-size: medium;
   font-weight: 800;
+}
+
+.mediumSpace {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.smallSpace {
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
