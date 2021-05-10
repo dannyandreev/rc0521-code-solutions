@@ -30,7 +30,7 @@ console.log('vehicle color: ' + vehicle.color);
 console.log(vehicle);
 
 var pet = {
-  name: 'bob',
+  name: 'bobert',
   type: 'cat'
 };
 
