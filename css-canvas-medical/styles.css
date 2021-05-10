@@ -23,6 +23,12 @@
   width: 100%;
 }
 
+.lightGreyBackground {
+  background-color: rgb(250, 250, 250);
+  height: 100%;
+  width: 100%;
+}
+
 .buttonMedium {
   border-radius: 4px;
   background-color: rgb(40, 68, 100);
@@ -39,11 +45,14 @@ p {
   line-height: 24px;
 }
 
-/* ----------------------------- HEADER ----------------------------- */
-header {
+.bottomBorder {
   border-bottom: solid;
   border-color: rgb(236, 236, 236);
   border-width: 1px;
+}
+
+/* ----------------------------- HEADER ----------------------------- */
+header {
   display: flex;
   justify-content: center;
 }
@@ -104,6 +113,10 @@ header {
   align-items: center;
 }
 
+.centerTextHorizontal {
+  text-align: center;
+}
+
 .centerHorizontal {
   /* display: flex;
   justify-content: space-between; */
@@ -133,8 +146,12 @@ header {
 }
 
 /* ----------------------------- TEXT ----------------------------- */
-.greyText {
+.darkGreyText {
   color: rgb(82, 83, 81);
+}
+
+.greyText {
+  color: rgb(110, 110, 110);
 }
 
 .lightGreyText {
