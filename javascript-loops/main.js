@@ -11,9 +11,9 @@ function getNumbersToTen() {
   var currentNumber = 1;
 
   for (;currentNumber <= 10; currentNumber++) {
-    numbers[currentNumber - 1] = currentNumber;
+    numbers.push(currentNumber);
   }
-  return (numbers);
+  return numbers;
 }
 console.log(getNumbersToTen());
 
@@ -21,10 +21,10 @@ function getEvenNumbersToTwenty() {
   var evenNumbers = [];
   var currentNumber = 2;
 
-  for (;currentNumber <= 10; currentNumber += 2) {
-    evenNumbers[currentNumber / 2 - 1] = currentNumber;
+  for (;currentNumber <= 20; currentNumber += 2) {
+    evenNumbers.push(currentNumber);
   }
-  return (evenNumbers);
+  return evenNumbers;
 }
 console.log(getEvenNumbersToTwenty());
 
@@ -35,7 +35,8 @@ function repeatWord(word, times) {
   for (;count <= times; count++) {
     repeated += word;
   }
-  return (repeated);
+  return repeated;
+
 }
 console.log(repeatWord('derp', 10));
 
@@ -47,10 +48,11 @@ function logEachCharacter(string) {
 logEachCharacter('funkadelic');
 
 function doubleAll(array) {
+  var newArray = [];
   for (var i = 0; i < array.length; i++) {
-    array[i] *= 2;
+    newArray[i] = array[i] * 2;
   }
-  return (array);
+  return newArray;
 }
 console.log(doubleAll([0, 1, 1, 2, 3, 5, 8, 13]));
 
@@ -59,7 +61,7 @@ function getKeys(object) {
   for (const prop in object) {
     keys.push(prop);
   }
-  return (keys);
+  return keys;
 }
 console.log(getKeys({ a: 1, b: 2, c: 3 }));
 
@@ -68,6 +70,6 @@ function getValues(object) {
   for (const prop in object) {
     values.push(object[prop]);
   }
-  return (values);
+  return values;
 }
 console.log(getValues({ a: 1, b: 2, c: 3 }));
