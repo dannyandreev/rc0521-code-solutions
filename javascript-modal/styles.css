@@ -1,0 +1,52 @@
+button {
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-style: none;
+  border-radius: 4px;
+}
+
+.open {
+  background-color: blue;
+}
+
+.close {
+  background-color: red;
+  margin-top: 30px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.text {
+  font-family: courier, sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.modal-box {
+  background-color: white;
+  border-radius: 6px;
+  padding: 24px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-content {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
