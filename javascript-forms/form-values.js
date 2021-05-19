@@ -9,4 +9,5 @@ function handleSubmit(event) {
   formInput.text = inputs[2].value;
 
   console.log(formInput);
+  formInput.reset();
 }
