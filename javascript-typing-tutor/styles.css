@@ -1,0 +1,39 @@
+
+.red {
+  color: rgb(249, 5, 8);
+}
+
+.green {
+  color: rgb(27, 205, 27);
+}
+
+.underline {
+  border-bottom-color: black;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+span {
+  display: block;
+  height: 24px;
+  width: 12px;
+  font-family: courier, sans-serif;
+  border-style: solid;
+  border-color: white;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
