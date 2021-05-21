@@ -19,8 +19,8 @@ var bookArray = [
 console.log(bookArray);
 console.log(typeof bookArray);
 
-var BookString = JSON.stringify(bookArray);
-console.log(BookString);
+var bookString = JSON.stringify(bookArray);
+console.log(bookString);
 console.log(typeof BookString);
 
 var jsonStudent = '{"id":13,"name":"Danny"}';
