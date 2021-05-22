@@ -21,7 +21,7 @@ console.log(typeof bookArray);
 
 var bookString = JSON.stringify(bookArray);
 console.log(bookString);
-console.log(typeof BookString);
+console.log(typeof bookString);
 
 var jsonStudent = '{"id":13,"name":"Danny"}';
 console.log(jsonStudent);
