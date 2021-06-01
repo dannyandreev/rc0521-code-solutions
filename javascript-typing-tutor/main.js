@@ -1,14 +1,27 @@
-
 document.addEventListener('keydown', handleType);
 
 var sentenceDisplay = document.querySelector('.userInput');
 
 var index = 0;
-var sentence = 'grumpy wizards make toxic brew';
+
+var sentence = "Type the sentence you need to practice and hit 'Enter'";
 var sentenceArray = sentence.split('');
 
 for (var i = 0; i < sentenceArray.length; i++) {
   var newElement = document.createElement('span');
+  newElement.setAttribute('id', i);
+  newElement.classList.add('gray');
+  newElement.textContent = sentence.charAt(i);
+  sentenceDisplay.appendChild(newElement);
+
+}
+
+// var enter = true;
+sentence = setSentence();
+sentenceArray = sentence.split('');
+
+for (i = 0; i < sentenceArray.length; i++) {
+  newElement = document.createElement('span');
   newElement.setAttribute('id', i);
   newElement.textContent = sentence.charAt(i);
   if (i === 0) {
@@ -17,16 +30,12 @@ for (var i = 0; i < sentenceArray.length; i++) {
   sentenceDisplay.appendChild(newElement);
 }
 
-// for(var i = 0;i<sentenceArray.length;i++) {
-//   // document.querySelector("[class='"+i+"']").classList.add(i*10)
-//   var selectedElement = document.querySelector("[class='"+i+"']")
-//   selectedElement.classList.add('green')
-// }
+function setSentence() {
+  //  while(enter===false) {
 
-// for(var i = 0;i<sentenceArray.length;i++) {
-//    var selectedElement = document.querySelector("[id='"+i+"']")
-//    selectedElement.classList.add('green')
-//  }
+  //  }
+  //  enter = true
+}
 
 function handleType(event) {
   var keyPressed = event.key;
