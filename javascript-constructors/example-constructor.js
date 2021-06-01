@@ -2,6 +2,8 @@ function ExampleConstructor() {
 
 }
 
+console.log(ExampleConstructor.prototype);
+
 console.log(typeof ExampleConstructor);
 
 var newVar = new ExampleConstructor();
