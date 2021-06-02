@@ -1,0 +1,49 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 36px;
+}
+
+.arrow:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content {
+  border: solid;
+  border-width: 3px;
+  min-width: 600px;
+  margin-top: 30px;
+}
+
+.dotContent {
+  margin: 4px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: white;
+  border-style: solid;
+  border-radius: 6px;
+  border-color: black;
+}
+
+.dotSelect {
+  height: 8px;
+  width: 8px;
+  border-style: solid;
+  background-color: black;
+  border-radius: 6px;
+}
