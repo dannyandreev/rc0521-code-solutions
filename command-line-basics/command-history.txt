@@ -1,0 +1,179 @@
+    1  cd repos
+    2  ls
+    3  mkdir http-messages
+    4  cd http-messages/
+    5  http http://www.example.com
+    6  http http://www.example.com --verbose
+    7  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+    8  cd ..
+    9  ls
+   10  cd rc0521-code-solutions/
+   11  cd http-messages/
+   12  git checkout master
+   13  git pull
+   14  git checkout -b http-messages
+   15  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+   16  ls
+   17  http --body GET http://example.com > index.html
+   18  git add .
+   19  git commit -m "http-messages | Danny Andreev"
+   20  git push origin http-messages 
+   21  git checkout master
+   22  git pull
+   23  ls
+   24  git checkout master
+   25  cd ..
+   26  git pull
+   27  git checkout javascript-ajax
+   28  git checkout -b javascript-ajax
+   29  git add .
+   30  git commit -m "javascript-ajax | Danny Andreev"
+   31  git add .
+   32  git commit -m "javascript-ajax | Danny Andreev"
+   33  git push origin javascript-ajax 
+   34  ls
+   35  cd repos
+   36  ls
+   37  git clone https://github.com/dannyandreev/my-home.git
+   38  cd my-home/
+   39  ls
+   40  npm ci
+   41  ls
+   42  cd ..
+   43  git clone -b sample-map-simple git@github.com:googlemaps/js-samples.git
+   44  npm ci
+   45  npm start
+   46  npm audit fix
+   47  cd ..
+   48  ls
+   49  cd my-home/
+   50  ls
+   51  cd ..
+   52  ls
+   53  git clone https://github.com/dannyandreev/my-home.git
+   54  my-home
+   55  git init
+   56  ls
+   57  git clone https://github.com/dannyandreev/my-home.git
+   58  cd my-home/
+   59  git status
+   60  git add .
+   61  git status
+   62  git commit -m "Created an automatic email that gets sent every time that a form is submitted and the prospective tenant fits some criteria"
+   63  git checkout -b "AutomateEmail"
+   64  git add .
+   65  git commit -m "Created an automatic email that gets sent every time that a form is submitted and the prospective tenant fits some criteria"
+   66  git push origin AutomateEmail 
+   67  git checkout master
+   68  git pull
+   69  git add .
+   70  ls
+   71  git push origin master
+   72  git pull
+   73  git checkout AutomateEmail 
+   74  git add .
+   75  git commit -m "Created an automatic email that gets sent every time that a form is submitted and the prospective tenant fits some criteria"
+   76  git push origin AutomateEmail 
+   77  git checkout master
+   78  git pull
+   79  git checkout -b "landing-page"
+   80  ls
+   81  cd repos
+   82  cd my-home/
+   83  git add .
+   84  git commit -m "Scaled map and color correction"
+   85  cd repos
+   86  cd code-journal/
+   87  git add .
+   88  git commit -m "landing page missing bedroom pictures and allignment"
+   89  git commit -m "landing page missing bedroom pictures and allignment" --no-verify
+   90  cd ..
+   91  cd my-home/
+   92  ls
+   93  git add .
+   94  git commit -m "landing page missing bedroom pictures and allignment"
+   95  git push origin landing-page 
+   96  git commit -m "landing page missing bedrooms pics, all else works
+   97  git push
+   98  git push origin landing-page 
+   99  git add .
+  100  git commit -m "landing page missing bedrooms pics, all else works
+  101  git push
+  102  git commit -m "landing page missing bedroom pictures and allignment"
+  103  ls
+  104  git add -A
+  105  git commit -m "just need bedrooms pics"
+  106  git push origin landing-page 
+  107  npm install @splidejs/splide
+  108  npm audit fix
+  109  ls
+  110  cd node_modules/
+  111  ls
+  112  git add .
+  113  git commit -m "rewriting from scratch to apply new layout, knowledge, and remove spaghetti"
+  114  cd ..
+  115  git add .
+  116  git commit -m "rewriting from scratch to apply new layout, knowledge, and remove spaghetti"
+  117  git add .
+  118  git commit -m "nav bar done, about us started"
+  119  git push origin landing-page 
+  120  npm uninstall @splidejs/splide
+  121  git add .
+  122  git push origin landing-page 
+  123  git add .
+  124  git push origin landing-page 
+  125  git add .
+  126  git push origin landing-page 
+  127  git add .
+  128  git push origin landing-page 
+  129  git stash
+  130  git checkout master
+  131  git checkout landing-page 
+  132  git add .
+  133  git push origin landing-page 
+  134  git add .
+  135  git push origin landing-page 
+  136  git add .
+  137  git commit -m "banner polished"
+  138  git push origin landing-page 
+  139  npm uninstall @splidejs/splide
+  140  git add .
+  141  git commit -m 
+  142  git commit -m "House Rules, Amenities, and Rent-A-Room done"
+  143  git push origin landing-page 
+  144  npm ci
+  145  npm install
+  146  npm audit fix
+  147  npm ci
+  148  git add .
+  149  git commit -m "npm ci reinstalled"
+  150  git status
+  151  git commit -m "npm ci reinstalled"
+  152  git commit -m "Commit message here" --no-verify
+  153  git push origin landing-page 
+  154  git add .
+  155  git commit -m "all sections done. still need to imbed google maps"
+  156  git add .
+  157  git commit -m "all sections done. still need to imbed google maps" --no
+  158  git commit -m "all sections done. still need to imbed google maps"
+  159  git add .
+  160  git commit -m "all sections done. still need to imbed google maps"
+  161  git add .
+  162  git commit -m "all sections done. still need to imbed google maps"
+  163  git add .
+  164  git commit -m "all sections done. still need to imbed google maps"
+  165  git add .
+  166  git commit -m "all sections done. still need to imbed google maps"
+  167  git add .
+  168  git commit -m "all sections done. still need to imbed google maps"
+  169  git add .
+  170  git commit -m "all sections done. still need to imbed google maps"
+  171  git commit -m "all sections done. still need to imbed google maps" --no-verify
+  172  git push origin landing-page 
+  173  cd repos
+  174  cd rc0521-code-solutions/
+  175  ls
+  176  cd command-line-basics/
+  177  history
+  178  ls
+  179  history >command-history.txt
