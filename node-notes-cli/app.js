@@ -7,7 +7,12 @@ if (arg1 === 'read') {
     if (err) {
       throw err;
     }
-    console.log(data);
+    const newJSON = JSON.parse(data);
+
+    for (const note in newJSON.notes) {
+      console.log(`Note ${note}: ${newJSON.notes[note]}`);
+    }
+    // console.log(data);
   });
 } else if (arg1 === 'create') {
   fs.readFile('./data.json', 'utf8', (err, data) => {
