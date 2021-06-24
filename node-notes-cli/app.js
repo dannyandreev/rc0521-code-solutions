@@ -24,9 +24,7 @@ if (arg1 === 'read') {
     const newJSON = JSON.parse(data);
     newJSON.notes[newJSON.nextId.toString()] = note;
     newJSON.nextId++;
-    fs.writeFile('./data.json', JSON.stringify(newJSON), function (err) {
-      if (err) throw err;
-    });
+    writeNote(newJSON);
   });
 } else if (arg1 === 'update') {
   fs.readFile('./data.json', 'utf8', (err, data) => {
@@ -38,9 +36,7 @@ if (arg1 === 'read') {
 
     const newJSON = JSON.parse(data);
     newJSON.notes[id] = note;
-    fs.writeFile('./data.json', JSON.stringify(newJSON), function (err) {
-      if (err) throw err;
-    });
+    writeNote(newJSON);
   });
 
 } else if (arg1 === 'delete') {
