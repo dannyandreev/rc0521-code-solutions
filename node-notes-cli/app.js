@@ -14,10 +14,10 @@ if (arg1 === 'read') {
     if (err) {
       throw err;
     }
-    const arg2 = process.argv[3];
+    const note = process.argv[3];
 
     const newJSON = JSON.parse(data);
-    newJSON.notes[newJSON.nextId.toString()] = arg2;
+    newJSON.notes[newJSON.nextId.toString()] = note;
     newJSON.nextId++;
     fs.writeFile('./data.json', JSON.stringify(newJSON), function (err) {
       if (err) throw err;
@@ -28,11 +28,11 @@ if (arg1 === 'read') {
     if (err) {
       throw err;
     }
-    const arg2 = process.argv[3];
-    const arg3 = process.argv[4];
+    const id = process.argv[3];
+    const note = process.argv[4];
 
     const newJSON = JSON.parse(data);
-    newJSON.notes[arg2.toString()] = arg3;
+    newJSON.notes[id] = note;
     fs.writeFile('./data.json', JSON.stringify(newJSON), function (err) {
       if (err) throw err;
     });
@@ -43,10 +43,10 @@ if (arg1 === 'read') {
     if (err) {
       throw err;
     }
-    const arg2 = process.argv[3];
+    const id = process.argv[3];
 
     const newJSON = JSON.parse(data);
-    delete newJSON.notes[arg2.toString()];
+    delete newJSON.notes[id];
     fs.writeFile('./data.json', JSON.stringify(newJSON), function (err) {
       if (err) throw err;
     });
