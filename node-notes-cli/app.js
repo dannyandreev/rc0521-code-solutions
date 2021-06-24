@@ -52,8 +52,13 @@ if (arg1 === 'read') {
 
     const newJSON = JSON.parse(data);
     delete newJSON.notes[id];
-    fs.writeFile('./data.json', JSON.stringify(newJSON), function (err) {
-      if (err) throw err;
-    });
+
+    writeNote(newJSON);
+  });
+}
+
+function writeNote(obj) {
+  fs.writeFile('./data.json', JSON.stringify(obj), function (err) {
+    if (err) throw err;
   });
 }
