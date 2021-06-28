@@ -7,7 +7,6 @@ app.use(function (req, res, next) {
   // console.log(req.method)
   // console.log(res.method)
   res.send('test send');
-  next();
 });
 
 app.listen(3000, () => {
