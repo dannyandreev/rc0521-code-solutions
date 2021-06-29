@@ -23,21 +23,28 @@ const grades = {
 
 const app = express();
 
-// console.log(grades)
+app.get('/api/grades/', (req, res) => {
+  // console.log('get')
 
-app.delete('/api/grades/:id', (req, res) => {
-
-  delete grades['12'];
-
-  // console.log(grades)
   const gradeArray = [];
+
   for (const id in grades) {
     gradeArray.push(grades[id]);
   }
 
-  // res.sendStatus(204)
   res.json(gradeArray);
-  res.send(res.params);
 });
 
-app.listen(3000);
+app.delete('/api/grades/:id', (req, res) => {
+  // console.log('delete')
+  const idToDelete = req.params.id;
+  // console.log(idToDelete)
+
+  delete grades[idToDelete];
+  // console.log(grades)
+  res.status(204).send();
+});
+
+app.listen(3000, () => {
+  // console.log('listening at 3000')
+});
