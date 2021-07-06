@@ -13,6 +13,30 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
+app.get('/api/grades', (req, res, next) => {
+
+  const sql = `
+  select
+    *
+  from
+    "grades"
+  `;
+
+  db.query(sql)
+    .then(result => {
+      const grades = result.rows;
+      if (!grades) {
+        res.status(404).json({ error: `No grades found` });
+      } else {
+        res.json(grades);
+      }
+    })
+    .catch(err => {
+      console.error(err);
+      res.status(500).json({ error: 'An unexpected error occured.' });
+    });
+});
+
 app.get('/api/grades/:gradeId', (req, res, next) => {
   const gradeId = parseInt(req.params.gradeId, 10);
   if (!Number.isInteger(gradeId) || gradeId <= 0) {
