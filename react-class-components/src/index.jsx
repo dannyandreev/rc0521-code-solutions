@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom';
 
 class CustomButton extends React.Component { // extends React.Component {
   render() {
-    return (
-      <button>{ this.props.text }</button>
-    );
+    return <button>{ this.props.text }</button>;
+
   }
 }
 
