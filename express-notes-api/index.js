@@ -52,9 +52,10 @@ app.delete('/api/notes/:id', (req, res) => {
         writeNote(newJSON, error => {
           if (error) {
             return res.status(500).json({ error: 'An unexpected server error occurred' });
+          } else {
+            res.status(204).json();
           }
         });
-        res.status(204).json();
       } else {
         res.status(400).json(`Could not find a note with id ${req.params.id}`);
       }
@@ -82,13 +83,46 @@ app.post('/api/notes/', (req, res) => {
       writeNote(newJSON, error => {
         if (error) {
           return res.status(500).json({ error: 'An unexpected server error occurred' });
+        } else {
+          res.status(201).json(req.body);
         }
       });
-      res.status(201).json(req.body);
-
     });
   } else {
     res.status(400).json('Please include a content property in the body of your post request');
+  }
+});
+
+app.put('/api/notes/:id', (req, res) => {
+  if (req.params.id > 0) {
+    if (req.body.content) {
+      fs.readFile('./data.json', 'utf8', (err, data) => {
+        if (err) {
+          res.status(500).json('unexpected error');
+        }
+        const newJSON = JSON.parse(data);
+         if (newJSON.notes[req.params.id]) {
+
+
+          newJSON.notes[req.params.id] = {};
+          newJSON.notes[req.params.id].content = req.body.content;
+          newJSON.notes[req.params.id].id = req.params.id
+          writeNote(newJSON, error => {
+            if (error) {
+              return res.status(500).json({ error: 'An unexpected server error occurred' });
+            } else {
+              res.status(200).json(req.body);
+            }
+          });
+        } else {
+          res.status(400).json(`Could not find a note with id ${req.params.id}`);
+        }
+      });
+    } else {
+      res.status(400).json('Please include a content property in the body of your post request');
+    }
+  } else {
+    res.status(400).json('Invalid id');
   }
 });
 
