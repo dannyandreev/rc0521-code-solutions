@@ -1,0 +1,36 @@
+.icon {
+  height: 24px;
+}
+
+.container {
+  height: 102px;
+  width: 102px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textContainer {
+  height: 16px;
+  width: 16px;
+}
+
+.errorText {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.title {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 24px;
+}
