@@ -3,17 +3,12 @@ import React from "react"
 class NewsletterForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {email: ""};
     this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(){
-
   }
 
   handleChange = (event) => {
     this.setState({email: event.target.value})
-
   }
 
   handleSubmit = (event) => {
@@ -29,7 +24,7 @@ class NewsletterForm extends React.Component {
           onChange={this.handleChange}
           />
         <button type="button"
-          onClick={this.handleSubmit}
+          onSubmit={this.handleSubmit}
           >Sign Up</button>
       </form>
     );
