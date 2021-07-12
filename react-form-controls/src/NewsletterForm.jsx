@@ -4,7 +4,6 @@ class NewsletterForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {email: ""};
-    this.handleClick = this.handleClick.bind(this);
   }
 
   handleChange = (event) => {
@@ -18,14 +17,14 @@ class NewsletterForm extends React.Component {
 
   render(){
     return (
-      <form className = "flex">
+      <form onSubmit={this.handleSubmit} className = "flex">
         <span>Email</span>
         <input type="text"
           onChange={this.handleChange}
           />
-        <button type="button"
-          onSubmit={this.handleSubmit}
-          >Sign Up</button>
+        <input type="submit"
+          value="Sign Up"
+          />
       </form>
     );
   }
