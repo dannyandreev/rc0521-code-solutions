@@ -1,0 +1,39 @@
+img {
+  height: 24px;
+}
+
+.container {
+  height: 102px;
+  width: 102px;
+
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 10px;
+}
+
+.stopWatchContainer {
+  height: 96px;
+  width: 96px;
+  border-style: solid;
+  border-radius: 64px;
+  border-color: black;
+  border-width: 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textContainer{
+  height: 16px;
+  width: 16px;
+}
+
+.center {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
