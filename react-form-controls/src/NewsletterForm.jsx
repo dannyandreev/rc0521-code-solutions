@@ -20,12 +20,13 @@ class NewsletterForm extends React.Component {
     return (
       <form className = "flex">
         <span>Email</span>
-        <input type="text"
+        <input type="text" value={this.state.email}
           onChange={this.handleChange}
           />
-        <button type="button"
+        </input>
+        <input type="button"
           onSubmit={this.handleSubmit}
-          >Sign Up</button>
+          >Sign Up</input>
       </form>
     );
   }
