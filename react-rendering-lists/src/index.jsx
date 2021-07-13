@@ -1,5 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 const pokedex = [
   { number: '001', name: 'Bulbasaur' },
@@ -10,19 +10,11 @@ const pokedex = [
 ];
 
 class Pokedex extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
-
-
-    const listItems = pokedex.map((card) => {
-      return (<li>{card.name}</li>)
-    })
-
-
-    return <ul>{listItems}</ul>
+    const listItems = pokedex.map(card => {
+      return (<li key={card.number}>{card.name}</li>);
+    });
+    return <ul>{listItems}</ul>;
   }
 }
 
