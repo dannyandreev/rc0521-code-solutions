@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Password from './password';
+import AppDrawer from './app-drawer';
 
 const element = (
   <div>
-    <Password/>
+    <AppDrawer/>
   </div>
 );
 

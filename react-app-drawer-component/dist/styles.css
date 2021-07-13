@@ -1,0 +1,65 @@
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+.menuContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20%;
+  min-width: 160px;
+  background-color: white;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.dim {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: background-color 1s ease-out;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.dim.open {
+  transition: all 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menuContainer.open {
+  transform: translateX(0%);
+}
+
+.menuTextContainer {
+  margin-left: 12px;
+}
+
+.entry {
+  font-family: 'Varela Round', sans-serif;
+  margin-top: 10px;
+}
+
+.entry:hover {
+  cursor: pointer;
+}
+
+.title {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 24px;
+  margin-top: 8px;
+}
+
+.title:hover {
+  cursor: pointer;
+}
+
+body {
+  background-image: url("../media/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
