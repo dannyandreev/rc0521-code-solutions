@@ -10,7 +10,7 @@ class Password extends React.Component {
 
   handleChange(event) {
     this.setState({ password: event.target.value }, () => {
-      const passLength = this.state.password.length;
+      const passLength = event.target.value.length;
 
       if (passLength === 0) {
         this.setState({ valid: false, error: 'A password is required' });
