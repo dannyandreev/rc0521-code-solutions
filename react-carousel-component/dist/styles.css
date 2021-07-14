@@ -1,0 +1,92 @@
+.icon {
+  height: 40px;
+  width: 40px;
+}
+
+.carouselContainer {
+  width: 50%;
+  border-style: solid;
+  border-width: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image {
+  width: 300px;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrowContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.arrowContainer:hover {
+  cursor: pointer;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.dot {
+  margin-left: 2px;
+  margin-right: 2px;
+  height: 10px;
+  width: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+}
+
+.select {
+  background-color: black;
+}
+
+.dot:hover {
+  cursor: pointer;
+}
+
+.dotContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menuContainer.open {
+  transform: translateX(0%);
+}
+
+.menuTextContainer {
+  margin-left: 12px;
+}
+
+.entry {
+  font-family: 'Varela Round', sans-serif;
+  margin-top: 10px;
+}
+
+.entry:hover {
+  cursor: pointer;
+}
+
+.title {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 24px;
+  margin-top: 8px;
+}
+
+.title:hover {
+  cursor: pointer;
+}
