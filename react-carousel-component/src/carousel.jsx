@@ -1,7 +1,7 @@
 import React from 'react';
 
 class Carousel extends React.Component {
-
+  // test
   constructor(props) {
     super(props);
     this.state = { image: 0, clock: true };
