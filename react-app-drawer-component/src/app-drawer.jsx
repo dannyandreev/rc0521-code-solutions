@@ -22,30 +22,7 @@ class AppDrawer extends React.Component {
     }
     //
     return (
-      <div>
-        <div className="icon" onClick = {event => { this.handleClick(); }}>
-          <img className="icon" src="../media/menu.png"/>
-        </div>
-        <div className={dimClass}></div>
-        <div onClick = {event => { this.handleClick(); }} id="menuContainer" className={menuContainerClass}>
-          <div className="menuTextContainer">
-            <div className="title">
-              Menu
-            </div>
-            <div>
-              <div className="entry">
-                About
-              </div>
-              <div className="entry">
-                Get Started
-              </div>
-              <div className="entry">
-                Sign In
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
     );
   }
 }
