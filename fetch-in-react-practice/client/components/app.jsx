@@ -19,6 +19,10 @@ export default class App extends React.Component {
      * Then 😉, once the response JSON is received and parsed,
      * update state with the received todos.
      */
+
+    fetch('/api/todos')
+      .then(response => response.json())
+      .then(data => this.setState({ todos: data }));
   }
 
   addTodo(newTodo) {
@@ -36,6 +40,17 @@ export default class App extends React.Component {
     * TIP: Use Array.prototype.concat to create a new array containing the contents
     * of the old array, plus the object returned by the server.
     */
+
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ task: newTodo.task })
+    };
+
+    fetch('/api/todos', requestOptions)
+      .then(response => response.json())
+      .then(data => this.setState({ todos: this.state.todos.concat(data) })
+      );
   }
 
   toggleCompleted(todoId) {
@@ -56,6 +71,21 @@ export default class App extends React.Component {
      * TIP: Be sure to SERIALIZE the updates in the body with JSON.stringify()
      * And specify the "Content-Type" header as "application/json"
      */
+
+    const requestOptions = {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ isCompleted: true })
+    };
+
+    fetch(`/api/todos/${todoId}`, requestOptions)
+      .then(response => response.json())
+      .then(data => {
+        const tempTodos = this.state.todos;
+        tempTodos[todoId - 1].isCompleted = !tempTodos[todoId - 1].isCompleted;
+        this.setState({ todos: tempTodos });
+      }
+      );
   }
 
   render() {
