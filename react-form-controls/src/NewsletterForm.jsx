@@ -17,7 +17,7 @@ class NewsletterForm extends React.Component {
 
   render(){
     return (
-      <form onSubmit={this.handleSubmit} className = "flex">
+      <form onSubmit={this.handleSubmit} className="flex">
         <span>Email</span>
         <input type="text"
           onChange={this.handleChange}
