@@ -34,7 +34,8 @@ export default class App extends React.Component {
   }
 
   toggleCompleted(todoId) {
-    const isCompletedToggleState = !this.state.todos[todoId - 1].isCompleted;
+
+    const isCompletedToggleState = !this.state.todos[this.state.todos.findIndex(element => element.todoId === todoId)].isCompleted;
 
     const requestOptions = {
       method: 'PATCH',
