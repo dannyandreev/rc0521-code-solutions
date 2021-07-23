@@ -22,7 +22,7 @@ export default class App extends React.Component {
         console.log(res)
       })
       .catch(err => next(err));
-    event.target.submit()
+    event.target.reset()
 
     /**
      * - prevent the browser from performing default form submission behavior
